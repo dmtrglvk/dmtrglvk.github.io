@@ -72,9 +72,93 @@
     <script src="js/app.js"></script>
   </head>
   <body>
-    <h1>Hello</h1>
-    <div class="chart-box">
-      <svg class="chart"></svg>
+    <div class="page">
+      <div class="menu-panel js-menu-panel-parent">
+        <ul class="menu-panel__list">
+          <li><a class="js-menu-opener" href="#">
+              <svg>
+                <use xlink:href="#menu"></use>
+              </svg></a></li>
+          <li><a href="#">
+              <svg>
+                <use xlink:href="#dashboard"></use>
+              </svg></a></li>
+          <li><a href="#">
+              <svg>
+                <use xlink:href="#document"></use>
+              </svg></a></li>
+          <li><a href="#">
+              <svg>
+                <use xlink:href="#settings"></use>
+              </svg></a></li>
+        </ul>
+        <div class="menu-panel__block js-menu-block">
+          <div class="menu-panel__block__holder">
+            <h2>Reports</h2>
+            <ul>
+              <li><a href="#">Daily Growth</a></li>
+              <li><a href="#">Evolution</a></li>
+              <li><a href="#">Seat Factor by Day</a></li>
+              <li><a href="#">Seat Factor by Sector</a></li>
+              <li><a href="#">Seat Factor by Flight</a></li>
+              <li><a href="#">R’ASK by Day</a></li>
+              <li><a href="#">Day View</a></li>
+              <li><a href="#">Route View</a></li>
+              <li><a href="#">Sector View</a></li>
+              <li><a href="#">Sector Growth</a></li>
+              <li><a href="#">Pax &amp; YLD By Station</a></li>
+              <li><a href="#">ACT vs BGT</a></li>
+              <li><a href="#">OnD’s</a></li>
+            </ul>
+            <h3>My Queries</h3>
+            <ul>
+              <li><a href="#">My New Report</a></li>
+            </ul>
+            <div class="copyright">
+              <svg>
+                <use xlink:href="#logo-accelaero-big"></use>
+              </svg><span>&copy; 2018 All Rights Reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="l-side"><strong class="logo"><a href="#">
+              <svg>
+                <use xlink:href="#logo"></use>
+              </svg></a></strong><span class="logo-text">aero<span class="strong">REV</span></span>
+        </div>
+        <div class="r-side">
+          <div class="search-form">
+            <form action="#">
+              <fieldset>
+                <input type="text" placeholder="Search">
+                <button type="submit">
+                  <svg>
+                    <use xlink:href="#search"></use>
+                  </svg>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="header-menu">
+            <ul>
+              <li><a href="#">
+                  <svg>
+                    <use xlink:href="#envelope"></use>
+                  </svg><span class="unread-messages">12</span></a></li>
+              <li><a href="#">
+                  <svg>
+                    <use xlink:href="#help"></use>
+                  </svg></a></li>
+              <li><a href="#">Administrator
+                  <svg>
+                    <use xlink:href="#user"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
