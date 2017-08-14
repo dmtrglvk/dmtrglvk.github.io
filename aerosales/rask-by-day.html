@@ -74,6 +74,7 @@
   <body>
     <div class="page">
       <div class="page-overlay"></div>
+      <div class="page-fader"></div>
       <div class="menu-panel js-menu-panel-parent">
         <ul class="menu-panel__list">
           <li><a class="js-menu-opener" href="#">
@@ -171,7 +172,7 @@
       <div class="control-panel">
         <h1 class="title">R’Ask by Day</h1>
         <div class="r-bar">
-          <button class="blue-btn upload">
+          <button class="blue-btn upload js-popup-opener" href="#create-query">
             <svg>
               <use xlink:href="#upload"></use>
             </svg>Save to My Queries
@@ -862,6 +863,77 @@
                 <td data-attr="add-cell" data-total="total-cell">335.2</td>
               </tr>
             </table>
+          </div>
+        </div>
+        <div class="popup js-popup" id="create-query">
+          <div class="popup-header"><strong>Create Query</strong><span class="close-popup js-popup-closer">
+              <svg>
+                <use xlink:href="#close"></use>
+              </svg></span></div>
+          <div class="popup-content">
+            <div class="create-query-wrap">
+              <div class="create-query-header">
+                <label for="query-name">Query Name</label>
+                <input type="text" id="query-name">
+              </div>
+              <div class="cols">
+                <div class="col">
+                  <h3 class="not-indent">Schedule</h3><span class="note">Report Generation Frequency</span>
+                  <div class="checkbox-wrap">
+                    <div class="row">
+                      <input type="checkbox" checked="checked" id="daily2">
+                      <label for="daily2">Daily</label>
+                    </div>
+                    <div class="row">
+                      <input type="checkbox" id="weekly2">
+                      <label for="weekly2">Weekly</label>
+                    </div>
+                    <div class="row">
+                      <input type="checkbox" id="monthly2">
+                      <label for="monthly2">Monthly</label>
+                    </div>
+                    <div class="row">
+                      <input class="custom-date" type="checkbox" id="custom-date2">
+                      <label for="custom-date2">Custom Date</label>
+                    </div>
+                  </div>
+                  <div class="datepicker-row inactive">
+                    <div>
+                      <label class="input-label" for="from-date2">From</label>
+                      <input class="datepicker" type="text" id="from-date2" disabled>
+                    </div>
+                    <div>
+                      <label class="input-label" for="to-date2">To</label>
+                      <input class="datepicker" type="text" id="to-date2" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <h3 class="not-indent">Recepients</h3>
+                  <div class="recepients-holder">
+                    <label class="input-label" for="recepients2">Email Address</label>
+                    <input type="text" id="recepients2"><a class="add" href="#">
+                      <svg>
+                        <use xlink:href="#add"></use>
+                      </svg></a>
+                  </div>
+                  <div class="recepients-list">
+                    <div class="item"><span>shiran@isa.ae</span><a class="remove" href="#">
+                        <svg>
+                          <use xlink:href="#close"></use>
+                        </svg></a></div>
+                    <div class="item"><span>aamir@airarabia.com</span><a class="remove" href="#">
+                        <svg>
+                          <use xlink:href="#close"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button class="transparent-btn js-popup-closer">CANCEL</button>
+                <button class="blue-btn">UPDATE</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

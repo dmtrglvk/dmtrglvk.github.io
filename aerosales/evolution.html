@@ -170,13 +170,8 @@
         </div>
       </div>
       <div class="control-panel">
-        <h1 class="title">Growth</h1>
+        <h1 class="title">Evolution</h1>
         <div class="r-bar">
-          <ul class="btn-tools">
-            <li class="active"><a href="#">Day</a></li>
-            <li><a href="#">Route</a></li>
-            <li><a href="#">Region</a></li>
-          </ul>
           <button class="blue-btn upload js-popup-opener" href="#create-query">
             <svg>
               <use xlink:href="#upload"></use>
@@ -195,31 +190,11 @@
         </div>
       </div>
       <div class="content">
-        <div class="white-content divider">
-          <div class="holder">
-            <div class="content-info">
-              <div class="content-panel">
-                <h3>Daily Growth</h3>
-                <div class="r-bar">
-                  <select class="selectpicker" title="All Routes" multiple data-live-search="true">
-                    <option>MCT</option>
-                    <option>SHJ</option>
-                    <option>DXB</option>
-                    <option selected>IST</option>
-                    <option>KWI</option>
-                    <option>AMM</option>
-                    <option>DOH</option>
-                    <option>IST</option>
-                    <option>AUH</option>
-                  </select>
-                  <select class="selectpicker" title="In &amp; Out">
-                    <option>My New Sales Report</option>
-                    <option>My New Report</option>
-                  </select>
-                  <select class="selectpicker" title="All Sectors">
-                    <option>My New Sales Report</option>
-                    <option>My New Report</option>
-                  </select>
+        <div class="white-content">
+          <div class="content-panel">
+            <div class="evolution-panel">
+              <div class="r-bar">
+                <div class="select-item"><span class="label">Region</span>
                   <select class="selectpicker" multiple>
                     <option>January</option>
                     <option>February</option>
@@ -234,117 +209,43 @@
                     <option>December</option>
                   </select>
                 </div>
-              </div>
-              <div class="info-block">
-                <div class="forcast"><strong class="box-ttl">Forcast</strong>
-                  <form action="#">
-                    <fieldset>
-                      <div class="form-row">
-                        <label>Capacity</label>
-                        <input type="text" value="719,098">
-                      </div>
-                      <div class="form-row">
-                        <label>Pax</label>
-                        <input type="text" value="434,490">
-                      </div>
-                      <div class="form-row">
-                        <label>SF %</label>
-                        <input type="text" value="80%">
-                      </div>
-                      <div class="form-row">
-                        <label>Revenue</label>
-                        <input type="text" value="120,719,098">
-                      </div>
-                      <div class="form-row">
-                        <label>Avg. YLD</label>
-                        <input type="text" value="329.0">
-                      </div>
-                      <div class="form-row">
-                        <label>R/ASK (fils)</label>
-                        <input type="text" value="14.1">
-                      </div>
-                    </fieldset>
-                  </form>
+                <div class="select-item"><span class="label">Route</span>
+                  <select class="selectpicker" title="All Routes">
+                    <option>My New Sales Report</option>
+                    <option>My New Report</option>
+                  </select>
                 </div>
-                <div class="chart-wrap">
-                  <div class="chart-legend"></div>
-                  <div class="d3chart bar-chart js-growth-chart"></div>
+                <div class="select-item"><span class="label">Sector</span>
+                  <select class="selectpicker" title="In &amp; Out">
+                    <option>My New Sales Report</option>
+                    <option>My New Report</option>
+                  </select>
+                </div>
+                <div class="select-item"><span class="label">Flight No.</span>
+                  <select class="selectpicker" title="All Sectors">
+                    <option>My New Sales Report</option>
+                    <option>My New Report</option>
+                  </select>
+                </div>
+                <div class="select-item"><span class="label">In/Out</span>
+                  <select class="selectpicker" title="All Sectors">
+                    <option>My New Sales Report</option>
+                    <option>My New Report</option>
+                  </select>
+                </div>
+                <div class="select-item"><span class="label">Flight Date</span>
+                  <div class="datepicker-row">
+                    <input class="datepicker" type="text" id="from-date" value="2017-08-01">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="content-sidebar">
-              <h3>Select Graph Style</h3>
-              <ul class="chart-style">
-                <li class="active">
-                  <svg>
-                    <use xlink:href="#col-chart"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg>
-                    <use xlink:href="#horizontal-col-chart"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg>
-                    <use xlink:href="#line-chart"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg>
-                    <use xlink:href="#region-chart"></use>
-                  </svg>
-                </li>
-                <li><img src="images/pie-chart.svg" alt=""></li>
-              </ul>
-              <h3 class="not-indent">Schedule</h3><span class="note">Report Generation Frequency</span>
-              <div class="checkbox-wrap">
-                <div class="row">
-                  <input type="checkbox" checked="checked" id="daily">
-                  <label for="daily">Daily</label>
-                </div>
-                <div class="row">
-                  <input type="checkbox" id="weekly">
-                  <label for="weekly">Weekly</label>
-                </div>
-                <div class="row">
-                  <input type="checkbox" id="monthly">
-                  <label for="monthly">Monthly</label>
-                </div>
-                <div class="row">
-                  <input class="custom-date" type="checkbox" id="custom-date">
-                  <label for="custom-date">Custom Date</label>
-                </div>
-              </div>
-              <div class="datepicker-row inactive">
-                <div>
-                  <label class="input-label" for="from-date">From</label>
-                  <input class="datepicker" type="text" id="from-date" disabled>
-                </div>
-                <div>
-                  <label class="input-label" for="to-date">To</label>
-                  <input class="datepicker" type="text" id="to-date" disabled>
-                </div>
-              </div>
-              <h3 class="not-indent">Recepients</h3>
-              <div class="recepients-holder">
-                <label class="input-label" for="recepients">Email Address</label>
-                <input type="text" id="recepients"><a class="add" href="#">
-                  <svg>
-                    <use xlink:href="#add"></use>
-                  </svg></a>
-              </div>
-              <div class="recepients-list">
-                <div class="item"><span>shiran@isa.ae</span><a class="remove" href="#">
-                    <svg>
-                      <use xlink:href="#close"></use>
-                    </svg></a></div>
-                <div class="item"><span>aamir@airarabia.com</span><a class="remove" href="#">
-                    <svg>
-                      <use xlink:href="#close"></use>
-                    </svg></a></div>
-              </div>
-            </div>
+          </div>
+          <div class="line-chart-wrap"><span>No. of PAX</span>
+            <div class="evo-chart line-chart-v2 line-chart1"></div>
+          </div>
+          <div class="line-chart-wrap"><span>No. of PAX</span>
+            <div class="evo-chart line-chart-v2 line-chart2"></div>
           </div>
         </div>
         <div class="popup js-popup" id="create-query">

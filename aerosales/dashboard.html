@@ -74,6 +74,7 @@
   <body>
     <div class="page">
       <div class="page-overlay"></div>
+      <div class="page-fader"></div>
       <div class="menu-panel js-menu-panel-parent">
         <ul class="menu-panel__list">
           <li><a class="js-menu-opener" href="#">
@@ -211,6 +212,18 @@
         </div>
       </div>
       <div class="content">
+        <div class="popup js-popup chart-popup" id="pax-popup">
+          <div class="popup-header"><strong>Yield Trends by RUN Date - May 2017 vs May 2016</strong><span class="close-popup js-popup-closer">
+              <svg>
+                <use xlink:href="#close"></use>
+              </svg></span></div>
+          <div class="popup-content">
+            <div class="line-chart-v2"><span class="axis-label y-axis-label">YEILD AED</span><span class="axis-label x-axis-label">DAY</span>
+              <div class="popup-chart-placeholder"></div>
+              <button class="blue-btn js-popup-closer">CLOSE</button>
+            </div>
+          </div>
+        </div>
         <div class="boxes-wrap">
           <div class="box">
             <div class="ttl-row">
@@ -235,7 +248,7 @@
             <div class="d3chart bar-chart js-growth-chart"></div>
           </div>
           <div class="box">
-            <div class="ttl-row"><a class="link" href="#">Pax & Yld Contribution by STN</a>
+            <div class="ttl-row"><a class="link js-popup-opener" href="#pax-popup">Pax & Yld Contribution by STN</a>
               <div class="l-side">
                 <h4 class="sub-ttl">Passenger</h4>
               </div>
@@ -301,7 +314,7 @@
             <div class="line-chart"></div>
           </div>
           <div class="box">
-            <div class="ttl-row"><a class="link" href="#">Pax & Yld Contribution by STN</a>
+            <div class="ttl-row"><a class="link js-popup-opener" href="#pax-popup">Pax & Yld Contribution by STN</a>
               <div class="l-side">
                 <h4 class="sub-ttl">Revenue</h4>
               </div>
